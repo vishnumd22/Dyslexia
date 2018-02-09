@@ -4,8 +4,9 @@ Main Project
 
 Parvathy Sivaji
 
-Hi I am Mekha
+Vishnu M.D.
 
-Hi I am Vishnu
+Mekha Anil
 
-Starting
+
+<Add all installation commands here>
