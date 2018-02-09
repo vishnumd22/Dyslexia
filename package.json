@@ -1,0 +1,19 @@
+{
+  "name": "dyslexia",
+  "version": "1.0.0",
+  "description": "electron application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnumd22/Dyslexia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishnumd22/Dyslexia/issues"
+  },
+  "homepage": "https://github.com/vishnumd22/Dyslexia#readme"
+}
