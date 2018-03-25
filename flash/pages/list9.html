@@ -10,12 +10,32 @@
     <script>window.$ = window.jQuery = require('jquery');</script>
 
     <script>
-
+        const loadJsonFile = require('load-json-file');
+        
+        loadJsonFile('test.json').then(json => {
+            words = json;
+             //console.log(words);
+            Object.keys(words).forEach(function(key) {
+                //console.log(key, words[key]);
+                $("#wrd").append(" "+words[key]);
+            });
+            
+        });
+        
+        
     </script>
     
     <style>
         a,a:hover{
             text-decoration: none;
+        }
+        body{
+            background-color: grey;
+        }
+        canvas {
+        display: block;
+        margin: 0 auto 20px;
+        cursor: move;
         }
     </style>
 
@@ -30,65 +50,25 @@
             </div>
         </div>
         <br>
+    
         <div class="row">
-            <div class="col-4">
-                <div class="btn text-center">
-                    <a href="">AFTER</a>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="btn text-center">
-                       <a href="">AGAIN</a>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="btn text-center">
-                        <a href="">COULD</a>
-                </div>
+            <div class="col">
+                <div id="wrd"></div>
             </div>
         </div>
-        <div class="row">
-                <div class="col-4">
-                    <div class="btn">
-                        <a href="">GIVE</a>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="btn text-center">
-                           <a href="">JUST</a>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="btn text-center">
-                            <a href="">KNOW</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                    <div class="col-4">
-                        <div class="btn">
-                            <a href="">LIVE</a>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="btn text-center">
-                               <a href="">LET</a>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="btn text-center">
-                                <a href="">THINK</a>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="col">
-                    <a href="../test.html">
-                        <span class="glyphicon glyphicon-chevron-left">Back</span>
-                    </a>
-                </div>      
+
+        <br>
+        <div class="col">
+            <a href="../test.html">
+                <span class="glyphicon glyphicon-chevron-left">Back</span>
+            </a>
+        </div>      
+    
     </div>
 
-   
+    <div class="container">
+            <canvas></canvas>
+    </div>
+    <script src="9.js"></script>
 </body>
 </html>
