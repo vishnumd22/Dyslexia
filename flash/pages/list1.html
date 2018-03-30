@@ -49,7 +49,7 @@
                 <div class="carousel-inner">
 
                   <div class="carousel-item active">
-                    <img class="animated flash d-block w-100" src="../images/image1.jpg" data-color="lightblue" alt="First Image">
+                    <img class="animated flash d-block w-100" data-color="lightblue">
                     <div class="carousel-caption d-md-block">
                       <h5 id="1"></h5>
                     </div>
@@ -155,8 +155,22 @@
         
         loadJsonFile('test.json').then(json => {
             words = json;
-            console.log(words[0]);
+            console.log(words[1]);
+            
+                $("#1").text(words[1]);    
+                $("#2").text(words[2]);
+                $("#3").text(words[3]);
+                $("#4").text(words[4]);
+                $("#5").text(words[5]);
+                $("#6").text(words[6]);
+                $("#7").text(words[7]);
+                $("#8").text(words[8]);
+                $("#9").text(words[9]);
+                $("#10").text(words[10]);
+                $("#11").text(words[11]);
+                $("#12").text(words[12]);
 
+            
         });
         
        
