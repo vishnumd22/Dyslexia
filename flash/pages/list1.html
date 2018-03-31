@@ -19,7 +19,11 @@
     <style>
 
         body{
+<<<<<<< HEAD
             background-color: violet;
+=======
+            background-color: red;
+>>>>>>> 19c7e6a8b04b66f3dc8b12ce13c6d4bde84a1c20
         }
 
     </style>
@@ -149,8 +153,39 @@
 
     <script>
 
+<<<<<<< HEAD
 
 
 </body>
 </html>
 
+=======
+        var words;
+        const loadJsonFile = require('load-json-file');
+        
+        loadJsonFile('test.json').then(json => {
+            words = json;
+            console.log(words[1]);
+            
+                $("#1").text(words[1]);    
+                $("#2").text(words[2]);
+                $("#3").text(words[3]);
+                $("#4").text(words[4]);
+                $("#5").text(words[5]);
+                $("#6").text(words[6]);
+                $("#7").text(words[7]);
+                $("#8").text(words[8]);
+                $("#9").text(words[9]);
+                $("#10").text(words[10]);
+                $("#11").text(words[11]);
+                $("#12").text(words[12]);
+
+            
+        });
+        
+       
+        
+    </script>
+</body>
+</html> 
+>>>>>>> 19c7e6a8b04b66f3dc8b12ce13c6d4bde84a1c20
