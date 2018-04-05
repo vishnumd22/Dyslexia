@@ -2,7 +2,7 @@
   "name": "dyslexia",
   "version": "1.0.0",
   "description": "electron application",
-  "main": "index.js",
+  "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
