@@ -9,7 +9,7 @@ html, body {
   height: 100%;
 }
 body {
-  background: rgb(50,50,50);
+  background: rgb(112, 112, 112);
 
 }
 
@@ -49,14 +49,13 @@ p {
 
 .letter {
   display: inline-block;
-  color: transparent;
   border-bottom: 5px solid $blue;
   margin: 0 10px;
   font-size: 50px;
   padding: 10px;
   transition: .5s;
   text-transform: uppercase;
-  
+  rgba(255, 255, 255, 0);
   
 }
 .word {
