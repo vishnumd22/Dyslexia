@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+   
+    <script>
+        window.$ = window.jQuery = require('jquery');
+        global.Tether = require('tether');
+    </script>
+    
+    <script src="../node_modules/bootstrap-v4-dev/dist/js/bootstrap.js"></script>
+    
+    <link rel="stylesheet" href="hangman.css">
+    
+    <style>
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="hangman">
+        <div class="guess"></div>
+        <form class="guessForm">
+          <input type="text" class="guessLetter" maxlength="1" placeholder="Enter a letter . . . &#x23ce;" /> <button type="submit" class="guessButton">Guess</button>
+        </form>
+        <p>Hint: words are web related. <br/></p>
+        <div class="wrong">
+          <div class="wrongLetters"></div>
+        </div>
+        <div class="message">
+          <h1 class="title"></h1>
+          <p class="text"></p>
+          <button class="restart button">Play Again?</button>
+      
+        </div>
+      </div>
+      <div>
+          <a href="../main.html">Back</a>
+      </div>
+
+   <script src="hangman.js"></script>
+   
+</body>
+</html>
