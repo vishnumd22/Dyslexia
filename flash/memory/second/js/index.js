@@ -113,63 +113,63 @@
 
 	var cards = [
 		{
-			name: "php",
-			img: "images/php-logo_1.png",
+			name: "right",
+			img: "../second/images/right.png",
 			id: 1,
 		},
 		{
-			name: "css3",
-			img: "images/after.png",
+			name: "sing",
+			img: "../second/images/sing.png",
 			id: 2
 		},
 		{
-			name: "html5",
-			img: "images/html5-logo.png",
+			name: "sit",
+			img: "../second/images/sit.png",
 			id: 3
 		},
 		{
-			name: "jquery",
-			img: "images/jquery-logo.png",
+			name: "sleep",
+			img: "../second/images/sleep.png",
 			id: 4
 		}, 
 		{
-			name: "javascript",
-			img: "images/js-logo.png",
+			name: "tell",
+			img: "../second/images/tell.png",
 			id: 5
 		},
 		{
-			name: "node",
-			img: "images/nodejs-logo.png",
+			name: "their",
+			img: "../second/images/their.png",
 			id: 6
 		},
 		{
-			name: "photoshop",
-			img: "images/photoshop-logo.png",
+			name: "these",
+			img: "../second/images/these.png",
 			id: 7
 		},
 		{
-			name: "python",
-			img: "images/python-logo.png",
+			name: "those",
+			img: "../second/images/those.png",
 			id: 8
 		},
 		{
-			name: "rails",
-			img: "images/rails-logo.png",
+			name: "upon",
+			img: "../second/images/upon.png",
 			id: 9
 		},
 		{
-			name: "sass",
-			img: "images/sass-logo.png",
+			name: "us",
+			img: "../second/images/us.png",
 			id: 10
 		},
 		{
-			name: "sublime",
-			img: "images/sublime-logo.png",
+			name: "use",
+			img: "../second/images/use.png",
 			id: 11
 		},
 		{
-			name: "wordpress",
-			img: "images/wordpress-logo.png",
+			name: "very",
+			img: "../second/images/very.png",
 			id: 12
 		},
 	];

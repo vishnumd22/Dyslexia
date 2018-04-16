@@ -79,3 +79,6 @@ function offsetSwitch(scrolling) {
     index.addEventListener('transitionend', () => isMoving = false, {once: true });
   }
 }
+
+
+
