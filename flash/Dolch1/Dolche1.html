@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dolche List</title>
+   
+    <script>
+        window.$ = window.jQuery = require('jquery');
+        global.Tether = require('tether');
+    </script>
+    <link rel="stylesheet" href="../node_modules/bootstrap-v4-dev/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap-v4-dev/dist/js/bootstrap.js"></script>
+  
+
+    <script>
+        var words;
+        const loadJsonFile = require('load-json-file');
+        
+        loadJsonFile('test.json').then(json => {
+            words = json;
+        });
+
+    </script>
+    
+    <style>
+    a,a:hover{
+        color:white;
+        text-decoration: none;
+    }
+    
+    </style>
+
+</head>
+<body>
+
+   <div class="container-fluid">
+    
+        <div class="row row-centered">
+            <div class="col col-centered">
+                <div class="display-1 text-center">
+                    DOLCHE LIST
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-3 red">
+                <div class="col btn btn-primary text-center">
+                    <a href="switchindex1.html">Pre Primer</a>
+                </div>
+            </div>
+            </div>
+            <br>
+            <div class="row">
+            <div class="col-3 green">                  
+                <div class="col btn btn-primary text-center">
+                    <a href="switchindex2.html">Primer</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" >
+            <div class="col-3 blue">
+              <div class="col btn btn-primary text-center">
+                    <a href="switchindex3.html">First</a>
+              </div>
+            </div>
+            </div>
+           
+            <br>
+
+        <div class="row">
+            <div class="col-3 yellow">
+                <div class="col btn btn-primary text-center">
+                    <a href="switchindex4.html">Second</a>
+                </div>
+            </div>
+            </div>
+<br>
+            <div class="row">
+            <div class="col-3">
+                    <div class="col btn btn-danger text-center">
+                        <a href="switchindex5.html">Third</a>
+                    </div>
+                </div>
+        </div>
+        <br>
+        
+            
+   </div>
+
+   <br>
+   <div class="row">
+    <div class="col-12">
+        <a class="btn btn-primary" style="color:black;" href="../main.html">Back</a>
+    </div>
+   </div>
+
+
+</body>
+</html>
