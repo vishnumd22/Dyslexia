@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>switching flashcards</title>
+  
+  <script>
+    window.$ = window.jQuery = require('jquery');
+    global.Tether = require('tether');
+</script>
+<link rel="stylesheet" href="../node_modules/bootstrap-v4-dev/dist/css/bootstrap.css">
+<script src="../node_modules/bootstrap-v4-dev/dist/js/bootstrap.js"></script>
+
+  
+      <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+
+    <div class="card first"><p>Scroll or press UP or DOWN</p><p>(does not work with touch yet)</p></div>
+  <div class="card second" ><p id="1"></p></div>
+  <div class="card third"><p id="2"></p></div>
+  <div class="card fourth"><p id="3"></p></div>
+  <div class="card fifth"><p id="4"></p></div>
+  <div class="card second" ><p id="5"></p></div>
+  <div class="card third"><p id="6"></p></div>
+  <div class="card fourth"><p id="7"></p></div>
+  <div class="card fifth"><p id="8"></p></div>
+  <div class="card second" ><p id="9"></p></div>
+  <div class="card third"><p id="10"></p></div>
+  <div class="card fourth"><p id="11"></p></div>
+  <div class="card fifth"><p id="12"></p></div>
+
+<!-- Do you want more cards? Just add one :) -->
+  
+  
+
+    <script  src="index.js"></script>
+
+    <script>
+    var words;
+const loadJsonFile = require('load-json-file');
+
+loadJsonFile('Dolch/dolchelist/pre.json').then(json => {
+    words = json;
+    
+        $("#1").text(words[1]);    
+        $("#2").text(words[2]);
+        $("#3").text(words[3]);
+        $("#4").text(words[4]);
+        $("#5").text(words[5]);
+        $("#6").text(words[6]);
+        $("#7").text(words[7]);
+        $("#8").text(words[8]);
+        $("#9").text(words[9]);
+        $("#10").text(words[10]);
+        $("#11").text(words[11]);
+        $("#12").text(words[12]);
+
+    
+});
+
+    </script>
+  <br>
+  <footer>
+    <div class="row">
+        <div class="col-12">
+            <a class="btn btn-primary" style="color:black;" href="../main.html">Back</a>
+        </div>
+       </div>
+  </footer>
+ 
+
+
+</body>
+
+</html>
