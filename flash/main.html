@@ -11,6 +11,7 @@
         global.Tether = require('tether');
     </script>
     <link rel="stylesheet" href="node_modules/bootstrap-v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="animate.css" >
     <script src="node_modules/bootstrap-v4-dev/dist/js/bootstrap.js"></script>
   
 
@@ -705,17 +706,22 @@ function myFunction() {
 
 
 <div id="image">
-    <img src="logo.png" alt="logo">
+    <img id="padam" src="logo.png" alt="logo" class="center" style="margin:0 auto; display: block; width: 30%; position:relative; top:50%;">
+    
+
 
 </div>
 
+<br>
+<br>
+<br>
+<br>
 
-
-   <div class="contatiner-fluid jumbotron"  >
+   <div class="container-fluid jumbotron" style="margin:0 auto; display: block; width: 30%;" >
     <div class="row text-centre">
 
             <div class="col text-centre" >
-                    <a class="btn btn-danger" href="Dolch/Dolche.html">1. Show Dolche List</a>
+                    <a class="btn btn-danger" href="memory/index.html">Let's Learn Dolche List</a>
         
                 </div>
     </div>
@@ -723,14 +729,14 @@ function myFunction() {
 
     <div class="row">
         <div class="col centered">
-            <a class="btn btn-success" href="hangman/hangmanindex.html">2. Play Hangman</a>
+            <a class="btn btn-success" href="hangman/hangmanindex.html">Let's Play Hangman</a>
 
         </div>
     </div>
     <br>
     <div class="row">
         <div class="col">
-            <a class="btn btn-primary" href="memory/index.html">3. Play Memory Game</a>
+            <a class="btn btn-primary" href="memory/index.html">Let's Play Memory Game</a>
         </div>
         </div>
 
@@ -738,7 +744,7 @@ function myFunction() {
         <br>
     <div class="row">
         <div class="col">
-            <a class="btn btn-primary" href="Dolch1/Dolche1.html">4. Switch</a>
+            <a class="btn btn-primary" href="Dolch/Dolche.html">Switch</a>
         </div>
         </div>
     
@@ -746,6 +752,22 @@ function myFunction() {
 
    </div>
 
+   <script>
+   $("#image").hide();
+   $(".container-fluid").hide();
+
+   setTimeout(function(){
+    $("#image").fadeIn();
+   },3000);
+
+setTimeout(function(){
+    $("#image").fadeOut();
+   },5000);
+
+   setTimeout(function(){
+    $(".container-fluid").fadeIn();
+   },6000);
    
+   </script>
 </body>
 </html>
