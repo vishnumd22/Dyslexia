@@ -79,3 +79,28 @@ function offsetSwitch(scrolling) {
     index.addEventListener('transitionend', () => isMoving = false, {once: true });
   }
 }
+
+
+
+var words;
+const loadJsonFile = require('load-json-file');
+
+loadJsonFile('Dolch/dolchelist/first.json').then(json => {
+    words = json;
+    console.log(words[1]);
+    
+        $("#1").text(words[1]);    
+        $("#2").text(words[2]);
+        $("#3").text(words[3]);
+        $("#4").text(words[4]);
+       /* $("#5").text(words[5]);
+        $("#6").text(words[6]);
+        $("#7").text(words[7]);
+        $("#8").text(words[8]);
+        $("#9").text(words[9]);
+        $("#10").text(words[10]);
+        $("#11").text(words[11]);
+        $("#12").text(words[12]);*/
+
+    
+});
