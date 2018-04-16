@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>List 1</title>
+    <title>Pre-Primer</title>
 
     <script>
             window.$ = window.jQuery = require('jquery');
             global.Tether = require('tether');
     </script>
 
-        <link rel="stylesheet" href="../node_modules/bootstrap-v4-dev/dist/css/bootstrap.css">
-        <script src="../node_modules/bootstrap-v4-dev/dist/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../../node_modules/bootstrap-v4-dev/dist/css/bootstrap.css">
+        <script src="../../node_modules/bootstrap-v4-dev/dist/js/bootstrap.js"></script>
 
-    <link rel="stylesheet" href="flashstyle.css">
+    <link rel="stylesheet">
 
     <style>
 
@@ -156,7 +156,7 @@
         var words;
         const loadJsonFile = require('load-json-file');
         
-        loadJsonFile('test.json').then(json => {
+        loadJsonFile('Dolch/dolchelist/first.json').then(json => {
             words = json;
             console.log(words[1]);
             
@@ -177,5 +177,9 @@
         });
         
     </script>
+
+<div>
+    <a href="../Dolche.html">Back</a>
+</div>
 </body>
 </html> 
