@@ -14,6 +14,7 @@
     <script src="../../node_modules/bootstrap-v4-dev/dist/js/bootstrap.js"></script>
     
     <link rel="stylesheet" href="../hangman.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-v4-dev/dist/css/bootstrap.css">
     
     <style>
         
@@ -25,7 +26,7 @@
     <div class="hangman">
         <div class="guess"></div>
         <form class="guessForm">
-          <input type="text" class="guessLetter" maxlength="1" placeholder="Enter a letter . . . &#x23ce;" /> <button type="submit" class="guessButton">Guess</button>
+          <input type="text" class="guessLetter" maxlength="1" placeholder="Enter a letter" /> <button type="submit" class="guessButton">Guess</button>
         </form>
         <p> <br/></p>
         <div class="wrong">
@@ -38,9 +39,12 @@
       
         </div>
       </div>
-      <div>
-          <a href="../hangmanindex.html">Back</a>
-      </div>
+     
+      <div class="row">
+        <div class="col-12">
+            <a class="btn btn-link" style="color:black;" href="../hangmanindex.html">Back</a>
+        </div>
+       </div>
 
    <script src="hangman.js"></script>
    

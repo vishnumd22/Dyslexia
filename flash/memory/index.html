@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hangman</title>
+    <title>Dolche List</title>
    
     <script>
         window.$ = window.jQuery = require('jquery');
@@ -15,48 +15,91 @@
   
 
     <script>
-    
+        var words;
+        const loadJsonFile = require('load-json-file');
+        
+        loadJsonFile('test.json').then(json => {
+            words = json;
+        });
+
     </script>
     
     <style>
- 
+    a,a:hover{
+        color:white;
+        text-decoration: none;
+    }
+    
     </style>
 
 </head>
 <body>
+<br>
+    <div class="row ">
+        <div class="col ">
+            <div class="display-2 text-center">
+                DOLCHE LIST
+            </div>
+        </div>
+    </div>
 
-   <div class="contatiner-fluid jumbotron">
+   <div class="container-fluid" style="margin:0 auto; display: block; width: 30%;">
+    
+        <br>
+        <br>
+        <div class="row row-centred">
+            <div class="col col-centred">
+                <div class="col btn btn-primary text-center">
+                    <a href="pre/preindex.html">Pre Primer</a>
+                </div>
+            </div>
+            </div>
+            <br>
+            <div class="row row-centred">
+            <div class="col col-centred">                  
+                <div class="col btn btn-success text-center">
+                    <a href="primer/primerindex.html">Primer</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row row-centred" >
+            <div class="col col-centred">
+              <div class="col btn btn-danger text-center">
+                    <a href="first/firstindex.html">First</a>
+              </div>
+            </div>
+            </div>
+           
+            <br>
 
-    <div class="row">
-
+        <div class="row row-centred">
+            <div class="col col-centred">
+                <div class="col btn btn-primary text-center">
+                    <a href="second/secondindex.html">Second</a>
+                </div>
+            </div>
+            </div>
+<br>
+            <div class="row row-centred">
+            <div class="col col-centred">
+                    <div class="col btn btn-success text-center">
+                        <a href="third/thirdindex.html">Third</a>
+                    </div>
+                </div>
+        </div>
+        <br>
         
-
-        <div class="col">
-            <a href="pre/preindex.html">Pre</a>
-        </div>
-        
-      
-        <div class="col">
-            <a href="primer/primerindex.html">Primer</a>
-        </div>
-
-         
-        <div class="col">
-            <a href="first/firstindex.html">First</a>
-        </div>
-        <div class="col">
-            <a href="second/secondindex.html">Second</a>
-        </div>
-
-        <div class="col">
-            <a href="third/thirdindex.html">Third</a>
-        </div>
-
-
+            
    </div>
-   <div>
-    <a href="../main.html">Back</a>
-</div>
-   
+
+   <br>
+   <div class="row">
+    <div class="col-12">
+        <a class="btn btn-link" style="color:black;" href="../main.html">Back</a>
+    </div>
+   </div>
+
+
 </body>
 </html>
